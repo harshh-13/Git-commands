@@ -15,7 +15,8 @@ git diff --staged
 git add -p
 git rm filename.extnsn
 git mv old_file new_file # move or rename file
-echo .DS_STORE > .gitignore # .gitignore is a file containing a list of files or filename patterns for Git to 		          ignore (skip) for the current repo.
+echo .DS_STORE > .gitignore # .gitignore is a file containing a list of files or filename patterns for Git to ignore (skip) for the current repo.
+
 git checkout filename.extnsn # revert unstaged changes
 git reset HEAD filename.extnsn # revert staged changes (similarly git restore)
 git commit --amend # overwrites previous commit msg
@@ -40,3 +41,16 @@ git clone url # to clone remote repository into local workspace
 git push #  to update the remote repository with our local changes
 git pull # updates the local repository by applying changes made in the remote repository
 git config --global credential.helper cache # to avoid having to type in our username and password repeatedly
+git remote
+git remote -v
+git remote show origin
+git branch -r 
+git fetch # it fetches remote updates but doesn't merge while git pull fetches remote updates and merges
+git merge origin/master # after using git fetch
+git remote update # will update all of your branches set to track remote ones, but not merge any changes in
+git push -u cur_branch src_branch # pushes src_branch to dst_branch(cur_branch)
+
+git rebase new_branch # Move the current branch on top of the refactor branch. This makes debugging easier and prevents three-way merges by transferring the completed work from one branch to another. (linear history)
+
+git push --delete origin new_branch # delete new_branch remotely
+git branch -d new_branch # delete new_branch locally 
