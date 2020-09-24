@@ -1,3 +1,3 @@
 # Git-commands
 
-File containing Git commands (Introduction to Git & GitHub)
+File containing git commands (Introduction to Git & GitHub)
