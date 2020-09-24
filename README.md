@@ -1,2 +1,3 @@
 # GIT-commands
-File containing GIT commands
+
+File containing GIT commands practiced
