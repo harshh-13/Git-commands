@@ -1,0 +1,42 @@
+git init # to create a new repository
+git status
+git add . #git add filename.extnsn
+git commit
+git commit -m 'msg'
+git commit -a -m 'msg' # direct commit without add but it must be first tracked using add cmd
+git log
+git log -p # p->patch
+git log -p -2 # last 2 commits
+git show commitID (commitID is a 40 char long Hash calculated using SHA1 algo)
+git log --stat
+git log --stat commitID
+git diff
+git diff --staged
+git add -p
+git rm filename.extnsn
+git mv old_file new_file # move or rename file
+echo .DS_STORE > .gitignore # .gitignore is a file containing a list of files or filename patterns for Git to 		          ignore (skip) for the current repo.
+git checkout filename.extnsn # revert unstaged changes
+git reset HEAD filename.extnsn # revert staged changes (similarly git restore)
+git commit --amend # overwrites previous commit msg
+git revert HEAD # to revert to previous commit (commit with inverse changes)
+
+# Git doesn't require entire commitID to identify a commit. first 4 chars are enough)
+# To rollback a commit on a public branch that wasn't the most recent one using the revert command, use commitID at end of the command.
+# Git use cryptographic hash keys for at does Git use cryptographic hash keys to guarantee the consistency of our repository
+# A Branch is just a pointer to a particular commit.The default branch that Git creates for you when a new repository initialized is called master.
+
+git branch # lists all branches
+git branch new_branch # create a new branch
+git checkout new_branch # switch to a new branch
+git checkout -b new_branch # to create & switch to a new branch
+git branch -d empty_branch # delete after merging branch
+git branch -D empty_branch # delete before merging branch
+git merge new_branch # fast-forward & 3-way merge
+git log --graph --oneline
+git merge --abort
+
+git clone url # to clone remote repository into local workspace
+git push #  to update the remote repository with our local changes
+git pull # updates the local repository by applying changes made in the remote repository
+git config --global credential.helper cache # to avoid having to type in our username and password repeatedly
