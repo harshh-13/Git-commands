@@ -44,6 +44,7 @@ git config --global credential.helper cache # to avoid having to type in our use
 git remote
 git remote -v
 git remote show origin
+git remote add upstream URL # Setting the upstream for a fork you have created
 git branch -r 
 git fetch # it fetches remote updates but doesn't merge while git pull fetches remote updates and merges
 git merge origin/master # after using git fetch
