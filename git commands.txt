@@ -54,3 +54,15 @@ git rebase new_branch # Move the current branch on top of the refactor branch. T
 
 git push --delete origin new_branch # delete new_branch remotely
 git branch -d new_branch # delete new_branch locally 
+
+git rebase -i master # merge pull requests into single pull request by squash/fixup/pick(default) etc.,
+git push -f # forcibly replaces the old commits with the new one and forces Git to push the current snapshot to the repo as it is. 
+
+# Forking is a way of creating a copy of the given repository so that it belongs to our user.
+# pull request is a request sent to the owner and collaborators of the target repo to pull your recent changes.
+# fixup operation will keep the original msg and discard the msg from fixup commit, while squash combines them.
+# The pick keyword takes the commits and rebases them against the branch we have chosen.
+# nit : a trivial comment or suggestion
+# CI : A continuous integration system will build and test our code every time there's a change.Once we have our code automatically built and tested, the next automation step is continuous deployment which is sometimes called continuous delivery or CD.
+# Pipelines specify the steps that need to run to get the result you want.
+# Artifacts is the name used to describe any files that are generated as part of the pipeline. 
