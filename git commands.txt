@@ -24,7 +24,7 @@ git revert HEAD # to revert to previous commit (commit with inverse changes)
 
 # Git doesn't require entire commitID to identify a commit. first 4 chars are enough)
 # To rollback a commit on a public branch that wasn't the most recent one using the revert command, use commitID at end of the command.
-# Git use cryptographic hash keys for at does Git use cryptographic hash keys to guarantee the consistency of our repository
+# Git use cryptographic hash keys to guarantee the consistency of repository
 # A Branch is just a pointer to a particular commit.The default branch that Git creates for you when a new repository initialized is called master.
 
 git branch # lists all branches
