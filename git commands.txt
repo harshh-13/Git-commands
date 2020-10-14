@@ -34,7 +34,7 @@ git reset		# reset the staging area to last commit without disturbing working di
 
 git branch 		# lists all branches
 git branch new_branch 	# create a new branch
-git checkout new_branch 	# switch to a new branch
+git checkout <branch> 	# switch to a branch
 git checkout -b new_branch 	# to create & switch to a new branch
 git branch -d empty_branch 	# delete after merging branch
 git branch -D empty_branch 	# delete before merging branch
