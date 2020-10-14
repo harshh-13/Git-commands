@@ -1,4 +1,4 @@
-git init # to create a new repository
+git init # initializes the current folder as a new repository
 git status
 git add . #git add filename.extnsn
 git commit
