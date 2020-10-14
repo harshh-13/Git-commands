@@ -23,6 +23,10 @@ git reset HEAD filename.extnsn 	# revert staged changes (similarly git restore)
 git commit --amend 		# overwrites previous commit msg
 git revert HEAD 		# to revert to previous commit (commit with inverse changes)
 
+git checkout --file	# to discard cahnges in working directory
+git reset <file>	# unstage a staged file with working directory unchanged
+git reset		# reset the staging area to last commit without disturbing working directory
+
 # Git doesn't require entire commitID to identify a commit. first 4 chars are enough)
 # To rollback a commit on a public branch that wasn't the most recent one using the revert command, use commitID at end of the command.
 # Git use cryptographic hash keys to guarantee the consistency of repository
