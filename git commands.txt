@@ -18,10 +18,10 @@ git rm filename.extnsn
 git mv old_file new_file 	# move or rename file
 echo .DS_STORE > .gitignore 	# .gitignore is a file containing a list of files or filename patterns for Git to ignore (skip) for the current repo.
 
-git checkout filename.extnsn 	# revert unstaged changes
-git reset HEAD filename.extnsn 	# revert staged changes (similarly git restore)
-git commit --amend 		# overwrites previous commit msg
-git revert HEAD 		# to revert to previous commit (commit with inverse changes)
+git checkout <commitId> filename.extnsn 	# revert unstaged changes
+git reset HEAD filename.extnsn 		# revert staged changes (similarly git restore)
+git commit --amend 			# overwrites previous commit msg
+git revert HEAD 			# to revert to previous commit (commit with inverse changes)
 
 git checkout --file	# to discard cahnges in working directory
 git reset <file>	# unstage a staged file with working directory unchanged
