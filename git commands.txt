@@ -56,6 +56,9 @@ git merge origin/master		# after using git fetch
 git remote update 		# update all obranches set to track remote ones, but not merge any changes
 git push -u cur_branch src_branch 	# pushes src_branch to dst_branch(cur_branch)
 
+git remote add origin <repository URL>	# to set up your local repository to link to your online Git repository
+git push -u origin master 		# to push the commits to the online repository
+
 git rebase new_branch 	# Move the current branch on top of the refactor branch. This makes debugging easier and prevents three-way merges by transferring the completed work from one branch to another. (linear history)
 
 git push --delete origin new_branch 	# delete new_branch remotely
