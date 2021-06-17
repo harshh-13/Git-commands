@@ -5,7 +5,7 @@ git commit	# commit changes to the repository
 git commit -m 'msg'
 git commit -a -m 'msg'  # direct commit without add but it must be first tracked using add cmd
 git log
-git lig --oneline	# brief log of comments
+git log --oneline	# brief log of comments
 git log -p 	# p->patch
 git log -p -2 	# last 2 commits
 git show commitID (commitID is a 40 char long Hash calculated using SHA1 algo)
